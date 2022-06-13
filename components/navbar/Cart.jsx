@@ -12,7 +12,6 @@ import {
     Button,
     IconButton,
     useColorMode,
-    Tooltip,
   } from '@chakra-ui/react'
   import {BsCart4} from 'react-icons/bs'
 
@@ -22,9 +21,7 @@ export default function Cart() {
   return (
     <Popover>
      <PopoverTrigger>
-     <Tooltip label="CART" aria-label='A tooltip'>
        <IconButton colorScheme="grya.500" backgroundColor={backgroundColor} textColor="white" fontSize="30px" icon={<BsCart4 />}>Trigger</IconButton>
-       </Tooltip>
      </PopoverTrigger>
     <PopoverContent>
       <PopoverArrow />
